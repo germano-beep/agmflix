@@ -8,6 +8,10 @@
 
 /* head */
 
+head {
+    width: 100%;
+}
+
 .header {
     background-color: #C70039;
     color: white;
@@ -83,9 +87,21 @@
 }
 
 
+/* body */
+
+
+/* sempre observar se a div é id ou class, 
+esqueço de conferir e acabo agarrando em coisas
+desnecessárias */
+
+#container-body img {
+    /* width: px; */
+}
+
+
 /* Responsivity */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 760px) {
     .search-film {
         width: 180px;
         padding-left: 0px;
@@ -105,20 +121,24 @@
         margin-top: 1px;
     }
     .btn-categorias {
-        width: 60px;
+        /* width: 60px;
         font-size: 10px;
-        margin-left: 1px;
+        margin-left: 1px; */
     }
 }
 
-@media only screen and (max-width:325px) {
+@media only screen and (max-width:380px) {
+    /* head */
+    head {
+        width: 300px;
+    }
     .search-film {
         width: 135px;
         margin-left: 0px;
     }
     .search-film input {
         width: 100px;
-        font-size: 10px;
+        font-size: 13px;
     }
     .header-left {
         /* border: 1px solid blue; */
@@ -131,8 +151,51 @@
         margin-top: 3px;
     }
     .btn-categorias {
-        width: 50px;
+        margin-top: 21px;
+        height: 30px;
+        width: 64px;
         font-size: 8px;
         margin-left: 0px;
+        font-size: 11px;
+    }
+    /* body */
+    #container-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #container-body img {
+        height: 230px;
+        width: 150px;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    .container-films {
+        position: relative;
+    }
+    .assistir {
+        color: #C70039;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    /* deixa opaco, e quando passa o mouse, aparece */
+    .middle {
+        position: absolute;
+        transition: 0.5s;
+        /*transition é utilizado para dar delay para mudar para o hover*/
+        opacity: 0;
+        top: 50%;
+        left: 43%;
+        transform: translate(-30%, 0%);
+    }
+    .container-films:hover .middle {
+        opacity: 1;
+    }
+    img {
+        transition: 0.5s;
+    }
+    .container-films:hover img {
+        opacity: 0.5;
+        cursor: pointer;
     }
 }
