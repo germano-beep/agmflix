@@ -27,7 +27,6 @@
 }
 
 .header-left i {
-    margin-top: 7px;
     margin-right: 2px;
 }
 
@@ -88,34 +87,11 @@
 
 @media only screen and (max-width: 800px) {
     .search-film {
-        width: 200px;
+        width: 180px;
+        padding-left: 0px;
     }
     .search-film input {
         width: 150px;
-        font-size: 15px;
-    }
-    .header-left {
-        /* border: 1px solid blue; */
-        margin-top: 15px;
-        margin-left: 0px;
-        margin-right: none;
-    }
-    .header-left h1 {
-        font-size: 20px;
-    }
-    .btn-categorias {
-        width: 60px;
-        font-size: 10px;
-    }
-}
-
-@media only screen and (max-width:325px) {
-    .search-film {
-        width: 150px;
-        margin-left: 0px;
-    }
-    .search-film input {
-        width: 100px;
         font-size: 15px;
     }
     .header-left {
@@ -125,7 +101,34 @@
         margin-right: 0px;
     }
     .header-left h1 {
+        font-size: 20px;
+        margin-top: 1px;
+    }
+    .btn-categorias {
+        width: 60px;
+        font-size: 10px;
+        margin-left: 1px;
+    }
+}
+
+@media only screen and (max-width:325px) {
+    .search-film {
+        width: 135px;
+        margin-left: 0px;
+    }
+    .search-film input {
+        width: 100px;
+        font-size: 10px;
+    }
+    .header-left {
+        /* border: 1px solid blue; */
+        margin-top: 15px;
+        margin-left: 0px;
+        margin-right: 2px;
+    }
+    .header-left h1 {
         font-size: 18px;
+        margin-top: 3px;
     }
     .btn-categorias {
         width: 50px;
