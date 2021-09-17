@@ -3,17 +3,20 @@
     text-shadow: 1px 1px px white;
     margin: 0px;
     top: 0px;
-
 }
+
+
 /* head */
+
 .header {
     background-color: #C70039;
-    color:white;
+    color: white;
     width: 100%;
     height: 70px;
     display: flex;
     justify-content: center;
-
+    margin: 0px;
+    padding: 0px;
 }
 
 .header-left {
@@ -22,8 +25,9 @@
     margin-top: 10px;
     margin-right: 20px;
 }
-.header-left i{
-    margin-top:7px;
+
+.header-left i {
+    margin-top: 7px;
     margin-right: 2px;
 }
 
@@ -33,53 +37,99 @@
     margin-left: 10px;
     text-align: center;
     border-radius: 30px;
-    height:40px;
-    width:110px;
+    height: 40px;
+    width: 110px;
     text-decoration: none;
-    font-size:20px;
+    font-size: 20px;
     background-color: #900C3F;
     border: none;
-  
 }
 
-.btn-categorias:hover{
+.btn-categorias:hover {
     font-weight: bold;
     cursor: pointer;
 }
 
-.btn-categorias:active{
+.btn-categorias:active {
     box-shadow: 0px 2px 3px #DAF7A6;
     color: #DAF7A6;
     transform: translateY(-2px);
 }
 
 .search-film {
-    margin-top:15px;
+    margin-top: 15px;
     /* border: 1px solid blue; */
     display: flex;
     justify-content: inline;
     background-color: #FFFFFF;
     width: 500px;
-    height:40px;
-    border-radius:10px
-    
-    
-    
+    height: 40px;
+    border-radius: 10px
 }
 
 .search-film input {
     width: 500px;
-    height:30px;
+    height: 30px;
     outline: none;
-    border:none;
+    border: none;
     margin-left: 5px;
-    margin-top:4px;
+    margin-top: 4px;
     font-size: 20px;
-
 }
 
-.search-film i{
+.search-film i {
     color: lightgrey;
     margin-top: 11px;
     margin-right: 5px;
+}
+
+
+/* Responsivity */
+
+@media only screen and (max-width: 800px) {
+    .search-film {
+        width: 200px;
+    }
+    .search-film input {
+        width: 150px;
+        font-size: 15px;
+    }
+    .header-left {
+        /* border: 1px solid blue; */
+        margin-top: 15px;
+        margin-left: 0px;
+        margin-right: none;
+    }
+    .header-left h1 {
+        font-size: 20px;
+    }
+    .btn-categorias {
+        width: 60px;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:325px) {
+    .search-film {
+        width: 150px;
+        margin-left: 0px;
+    }
+    .search-film input {
+        width: 100px;
+        font-size: 15px;
+    }
+    .header-left {
+        /* border: 1px solid blue; */
+        margin-top: 15px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .header-left h1 {
+        font-size: 18px;
+    }
+    .btn-categorias {
+        width: 50px;
+        font-size: 8px;
+        margin-left: 0px;
+    }
 }
