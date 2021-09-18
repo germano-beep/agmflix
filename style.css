@@ -34,29 +34,29 @@ head {
     margin-right: 2px;
 }
 
-.btn-categorias {
-    color: white;
-    margin-top: 15px;
-    margin-left: 10px;
-    text-align: center;
-    border-radius: 30px;
-    height: 40px;
-    width: 110px;
-    text-decoration: none;
-    font-size: 20px;
-    background-color: #900C3F;
-    border: none;
+.categorias {
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin-top: 12px;
+    background-color: #C70039;
 }
 
-.btn-categorias:hover {
-    font-weight: bold;
+.categorias i {
+    margin-top: 18px;
+    margin-left: 18px;
+}
+
+.categorias:hover {
     cursor: pointer;
 }
 
-.btn-categorias:active {
-    box-shadow: 0px 2px 3px #DAF7A6;
-    color: #DAF7A6;
-    transform: translateY(-2px);
+.categorias:active {
+    /* box-shadow: 0px 2px 3px #DAF7A6; */
+    /* transform: translateY(-2px); */
+    color: #C70039;
+    background-color: white;
 }
 
 .search-film {
@@ -94,8 +94,48 @@ head {
 esqueço de conferir e acabo agarrando em coisas
 desnecessárias */
 
-#container-body img {
-    /* width: px; */
+#container-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-films {
+    margin-top: 20px;
+    margin-left: 30px;
+    position: relative;
+    font-size: 25px;
+}
+
+.assistir {
+    color: #C70039;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.container-films img {
+    height: 250px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.middle {
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translate(45%, 450%);
+}
+
+.container-films:hover .middle {
+    opacity: 1;
+}
+
+img {
+    transition: 0.5s;
+}
+
+.container-films:hover img {
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 
@@ -120,7 +160,7 @@ desnecessárias */
         font-size: 20px;
         margin-top: 1px;
     }
-    .btn-categorias {
+    .categorias {
         /* width: 60px;
         font-size: 10px;
         margin-left: 1px; */
@@ -150,14 +190,7 @@ desnecessárias */
         font-size: 18px;
         margin-top: 3px;
     }
-    .btn-categorias {
-        margin-top: 21px;
-        height: 30px;
-        width: 64px;
-        font-size: 8px;
-        margin-left: 0px;
-        font-size: 11px;
-    }
+    .categorias {}
     /* body */
     #container-body {
         display: flex;
@@ -165,18 +198,20 @@ desnecessárias */
         align-items: center;
     }
     #container-body img {
-        height: 230px;
+        height: 250px;
         width: 150px;
         margin-top: 20px;
         border-radius: 10px;
     }
     .container-films {
         position: relative;
+        margin-top: 0px;
     }
     .assistir {
         color: #C70039;
         font-weight: bold;
         text-decoration: none;
+        font-size: 20px;
     }
     /* deixa opaco, e quando passa o mouse, aparece */
     .middle {
@@ -186,16 +221,9 @@ desnecessárias */
         opacity: 0;
         top: 50%;
         left: 43%;
-        transform: translate(-30%, 0%);
+        transform: translate(-40%, -10%);
     }
     .container-films:hover .middle {
         opacity: 1;
-    }
-    img {
-        transition: 0.5s;
-    }
-    .container-films:hover img {
-        opacity: 0.5;
-        cursor: pointer;
     }
 }
